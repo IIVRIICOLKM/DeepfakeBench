@@ -6,3 +6,9 @@
 
 #### Notice : Not really Celeb-DF-v1, Just Preprocessed AIHUB Deepfake manipulated Dataset by this tool's preprocess module
 ### Raw Dataset : https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=55
+
+```
+weights : root/training/weights
+pretrained : root/training/pretrained
+dataset : root/datasets
+```
