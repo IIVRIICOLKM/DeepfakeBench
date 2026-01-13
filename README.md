@@ -95,3 +95,8 @@ jupyter notebook --ip 0.0.0.0 --allow-root
 ```
 
 ## 4. Run deep_main/training/test_with_korean_dataset.ipynb and get result cells
+
+### Example Results
+<img width="704" height="1253" alt="스크린샷 2026-01-14 001959" src="https://github.com/user-attachments/assets/6b1b3ac5-fdd6-4c10-862e-51be563bd3cd" />
+
+
