@@ -1,0 +1,13 @@
+{
+    "capsule_net.yaml" : "capsule_best.pth",
+    "resnet34.yaml" : "cnnaug_best.pth",
+    "core.yaml" : "core_best.pth",
+    "efficientnetb4.yaml" : "effnb4_best.pth",
+    "f3net.yaml" : "f3net_best.pth",
+    "ffd.yaml" : "ffd_best.pth",
+    "meso4.yaml" : "meso4_best.pth",
+    "meso4Inception.yaml" : "meso4Incep_best.pth",
+    "recce.yaml" : "recce_best.pth",
+    "srm.yaml" : "srm_best.pth",
+    "xception.yaml" : "xception_best.pth"
+}
