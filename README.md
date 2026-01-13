@@ -12,3 +12,37 @@ weights : root/training/weights
 pretrained : root/training/pretrained
 dataset : root/datasets
 ```
+
+## Structure of Preprocessed Dataset
+
+```
+# This image dataset is preprocessed by root/preprocessing/preprocess.py
+# .mp4 -> .png
+# added landmarks with filed numpy array
+
+── Celeb-DF-v1
+| ├── Celeb-real                # Korean's face Image dataset's labelled with raw                
+| │ ├── frames
+| │ │ ├── uuid_directories …
+| │ │ │ └── *.png
+| │ ├── landmarks
+| │ │ ├── uuid_directories …
+| │ │ │ └── *.npy
+| │ │ └── 
+| ├── Celeb-synthesis           # Korean's Image dataset's labelled with fake  
+| │ ├── frames
+| │ │ ├── uuid_directories …
+| │ │ │ └── *.png
+| │ ├── landmarks
+| │ │ ├── uuid_directories …
+| │ │ │ └── *.npy
+| │ │ └──
+| ├── Youtube-real              # Korean's Image dataset's labelled with true (which assumed to youtube source)  
+| │ ├── frames
+| │ │ ├── uuid_directories …
+| │ │ │ └── *.png
+| │ ├── landmarks
+| │ │ ├── uuid_directories …
+| │ │ │ └── *.npy
+| │ │ └──
+```
