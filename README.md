@@ -93,3 +93,5 @@ jupyter notebook --ip 0.0.0.0 --allow-root
 # url : http://localhost:8888/?token=<your_access_token>
 # initial_password : your_access_token
 ```
+
+## 4. Run deep_main/training/test_with_korean_dataset.ipynb and get result cells
