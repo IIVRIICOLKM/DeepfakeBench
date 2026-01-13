@@ -64,7 +64,7 @@ git clone https://github.com/IIVRIICOLKM/DeepfakeBench
 cd DeepfakeBench
 
 # 2. Build Dockerfile
-docker build -t DeepfakeBench .
+docker build -t deepfakebench .
 
 # 3. If, install finished, Run Container with this command
 docker run --gpus all -itd --name con1 -p 8888:8888 --volume="$(pwd)"/:/deep_main --shm-size 64G deepfakebench
