@@ -52,6 +52,44 @@ dataset : root/datasets
 ### Requirements
 
 - Python 3.7.12
-- Docker Desktop (up to Engine Version 19.03.14)
+- Docker Desktop (up to Engine Version 19.03.14) : https://docs.docker.com -> Get Docker
 - 4GB + RAM
 ----
+
+## 1. Install and build Dockerfile
+
+```bash
+# 1. clone repository
+git clone https://github.com/IIVRIICOLKM/DeepfakeBench
+cd DeepfakeBench
+
+# 2. Build Dockerfile
+docker build -t DeepfakeBench .
+
+# 3. If, install finished, Run Container with this command
+docker run --gpus all -itd --name con1 -p 8888:8888 --volume="$(pwd)"/:/deep_main --shm-size 64G deepfakebench
+docker exec -it con1 bash
+```
+
+## 2. Install required packages
+```bash
+# Required Packages
+pip install albumentations==1.1.0
+pip install lmdb==1.7.3
+```
+
+## 3. Install jupyter notebook and Set Jupyter environment
+
+```bash
+# 1. Install jupyter notebook with pip
+pip install jupyter notebook
+
+# 2. Create General Config
+jupyter notebook --generate-config -y
+
+# 3. Run jupyter notebook
+jupyter notebook --ip 0.0.0.0 --allow-root
+
+# url : http://localhost:8888/?token=<your_access_token>
+# initial_password : your_access_token
+```
